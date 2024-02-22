@@ -1,5 +1,8 @@
-<img src="{{img}}">
-<h3>Card: {{title}}</h3>
-<p>{{index}}</p>
-<p>{{id}}</p>
-<p *ngIf="class!='card'">{{content}}</p>
+<div class="container_card" [routerLink]="['content',id]">
+    <div class="card_image">
+        <img src="{{img}}">
+    </div>
+    <div class="card_title">
+        <h1><a [routerLink]="['content',id]">{{title}}</a></h1>
+    </div>    
+</div>

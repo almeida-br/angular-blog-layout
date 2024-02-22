@@ -1,0 +1,12 @@
+
+.container_title>h1{
+    font-size: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+hr{
+    border: 1px solid gray;
+    width: 90%;
+    margin: 15px auto;
+}

@@ -1,0 +1,15 @@
+<div class="container_main-card" [routerLink]="['content',id]">
+    <div class="main-card_image">
+        <img src="{{img}}">
+    </div>
+    <div class="main-card_title">
+        <h1><a [routerLink]="['content',id]">{{title}}</a></h1>
+    </div>
+    <div class="main-card_content">
+        <p>
+            <a [routerLink]="['content',id]">
+                {{content}}
+            </a>
+        </p>
+    </div>
+</div>

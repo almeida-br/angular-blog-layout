@@ -3,14 +3,15 @@ import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-card',
+  selector: 'app-main-card',
   standalone: true,
   imports: [CommonModule,RouterModule],
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css','../styles.css']
+  templateUrl: './main-card.component.html',
+  styleUrls: ['./main-card.component.css']
 })
-export class CardComponent {
+export class MainCardComponent {
   @Input() id:string="0"
   @Input() img:string=''
   @Input() title:string=''
+  @Input() content:string=''
 }
